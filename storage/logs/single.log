@@ -1,0 +1,3 @@
+2020-03-28 06:50:48 - ERROR - OperationalError in /home/kaito/workspase/Python3/masonite_template/app/http/controllers/auth/RegisterController.py on line 55
+2020-03-28 06:52:24 - ERROR - OperationalError in /home/kaito/workspase/Python3/masonite_template/app/http/controllers/auth/RegisterController.py on line 55
+2020-03-28 06:54:07 - ERROR - OperationalError in /home/kaito/workspase/Python3/masonite_template/app/http/controllers/auth/RegisterController.py on line 55
