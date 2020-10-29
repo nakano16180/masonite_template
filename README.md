@@ -7,6 +7,27 @@
 ```
 $ cd masonite_template/
 $ pipenv install -r requirements.txt
+$ pipen run craft install
+```
+
+generate key
+
+```
+$ pipenv run craft key
+```
+
+edit .env
+
+```
+KEY=<your-secret-key>
+DB_CONNECTION=postgres
+DB_HOST=localhost
+DB_PORT=5432
+DB_DATABASE=hello_masonite_dev
+DB_USERNAME=postgres
+DB_PASSWORD=postgres
+DB_LOG=True
+
 ```
 
 ### setup database
@@ -26,25 +47,12 @@ postgres=# \q
 # exit
 ```
 
-edit .env
-
 ```
-DB_CONNECTION=postgres
-DB_HOST=localhost
-DB_PORT=5432
-DB_DATABASE=hello_masonite_dev
-DB_USERNAME=postgres
-DB_PASSWORD=postgres
-DB_LOG=True
-
+$ pipenv run craft migrate
 ```
 
 ### run
 
 ```
-$ craft migrate
-```
-
-```
-$ craft serve
+$ pipenv run craft serve
 ```
