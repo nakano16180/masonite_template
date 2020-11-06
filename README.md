@@ -6,31 +6,35 @@
 
 ```
 $ cd masonite_template/
-$ pipenv install -r requirements.txt
-$ pipen run craft install
+$ pipenv install
+$ pipenv run craft install
 ```
 
+### setup for local (use sqlite)
 generate key
 
 ```
 $ pipenv run craft key
 ```
 
-edit .env
+edit `.env` file
 
 ```
-KEY=<your-secret-key>
-DB_CONNECTION=postgres
-DB_HOST=localhost
-DB_PORT=5432
-DB_DATABASE=hello_masonite_dev
-DB_USERNAME=postgres
-DB_PASSWORD=postgres
-DB_LOG=True
+KEY=your-key
 
+DB_CONNECTION=sqlite
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=blog.db
+DB_USERNAME=root
+DB_PASSWORD=root
 ```
 
-### setup database
+```
+$ pipenv run craft migrate
+```
+
+### use postgresql for database
 
 ```
 $ docker run -v /var/lib/psql --name psql_data busybox
@@ -45,6 +49,21 @@ postgres=# create database hello_masonite_dev;
 postgres=# \q
 
 # exit
+```
+
+edit .env
+
+```
+KEY=<your-secret-key>
+
+DB_CONNECTION=postgres
+DB_HOST=localhost
+DB_PORT=5432
+DB_DATABASE=hello_masonite_dev
+DB_USERNAME=postgres
+DB_PASSWORD=postgres
+DB_LOG=True
+
 ```
 
 ```
