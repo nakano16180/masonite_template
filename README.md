@@ -75,3 +75,14 @@ $ pipenv run craft migrate
 ```
 $ pipenv run craft serve
 ```
+
+### use tailwindcss
+
+```
+$ npm install
+```
+
+```
+$ npm run dev
+$ pipenv run craft serve
+```
