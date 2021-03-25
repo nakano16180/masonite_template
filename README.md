@@ -82,7 +82,12 @@ $ pipenv run craft serve
 $ npm install
 ```
 
+compile
 ```
 $ npm run dev
+```
+
+run server
+```
 $ pipenv run craft serve
 ```
