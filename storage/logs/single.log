@@ -8,3 +8,6 @@
 2021-03-27 13:09:48 - ERROR - TemplateSyntaxError in /home/kaito/workspase/masonite_template/resources/templates/auth/base.html on line 27
 2021-03-27 13:09:53 - ERROR - TemplateSyntaxError in /home/kaito/workspase/masonite_template/resources/templates/auth/base.html on line 27
 2021-03-27 13:24:37 - ERROR - TemplateSyntaxError in /home/kaito/workspase/masonite_template/resources/templates/auth/base.html on line 68
+2021-04-01 06:08:54 - ERROR - Error in /usr/lib/python3.6/base64.py on line 87
+2021-04-01 06:09:49 - ERROR - DriverNotFound in 0 on line 0
+2021-04-01 06:10:30 - ERROR - QueryException in 0 on line 0

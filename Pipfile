@@ -1,17 +1,14 @@
 [[source]]
-name = "pypi"
 url = "https://pypi.org/simple"
 verify_ssl = true
-
-[dev-packages]
+name = "pypi"
 
 [packages]
-masonite = ">=2.3,<2.4"
-masonite-logging = ">=1.0,<2.0"
+masonite = ">=3.0,<4.0"
+masonite-logging = "<2.0,>=1.0"
 masonite-validation = ">=3.0,<4.0"
-gunicorn = "==19.9.0"
-psycopg2 = "==2.7.5"
-masonite-inertia = "<3"
+
+[dev-packages]
 
 [requires]
 python_version = "3.6"
