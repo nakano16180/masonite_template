@@ -5,7 +5,7 @@ from masonite.environment import LoadEnvironment
 LoadEnvironment()
 
 from masonite.app import App
-from src.masonite.helpers import config
+from masonite.helpers import config
 from masonite.wsgi import response_handler
 
 """Instantiate Container And Perform Important Bindings
