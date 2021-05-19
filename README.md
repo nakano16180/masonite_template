@@ -14,7 +14,7 @@ $ pipenv run craft install
 generate key
 
 ```
-$ pipenv run craft key
+$ pipenv run python craft key --store
 ```
 
 edit `.env` file
@@ -31,7 +31,7 @@ DB_PASSWORD=root
 ```
 
 ```
-$ pipenv run craft migrate
+$ pipenv run python craft migrate
 ```
 
 ```
@@ -47,5 +47,7 @@ $ npm run dev
 
 run server
 ```
-$ pipenv run craft serve
+$ pipenv run python craft serve
 ```
+
+demo: http://localhost:8000
