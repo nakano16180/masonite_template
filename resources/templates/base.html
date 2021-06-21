@@ -10,17 +10,15 @@
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
-    
+
     {% block css %}{% endblock %}
 </head>
 
 <body>
-
-    <div class="flex-center position-ref full-height">
-
-        <div class="content">
+    <div class="flex items-center justify-center h-screen font-medium">
+        <div class="text-center">
             {% block content %}
-            
+
             {% endblock %}
         </div>
     </div>

@@ -1,9 +1,12 @@
 """First Entry For The WSGI Server."""
 
-from masonite.app import App
+from masonite.environment import LoadEnvironment
 
-from bootstrap.start import app
-from config import application, providers
+LoadEnvironment()
+
+from masonite.app import App
+from masonite.helpers import config
+from masonite.wsgi import response_handler
 
 """Instantiate Container And Perform Important Bindings
 Some Service providers need important bindings like the WSGI application
@@ -12,7 +15,7 @@ and the application configuration file before they boot.
 
 container = App()
 
-container.bind('WSGI', app)
+container.bind('WSGI', response_handler)
 container.bind('Container', container)
 
 container.bind('Providers', [])
@@ -26,7 +29,7 @@ only run once when the server is started. Providers will be ran
 once if the wsgi attribute on a provider is False.
 """
 
-for provider in providers.PROVIDERS:
+for provider in config('providers.providers'):
     located_provider = provider()
     located_provider.load_app(container).register()
     if located_provider.wsgi:

@@ -4,7 +4,7 @@ import logging
 
 from masonite import env
 from masonite.environment import LoadEnvironment
-from orator import DatabaseManager, Model
+from masoniteorm.connections import ConnectionResolver
 
 """Load Environment Variables
 Loads in the environment variables when this page is imported.
@@ -49,8 +49,7 @@ DATABASES = {
     },
 }
 
-DB = DatabaseManager(DATABASES)
-Model.set_connection_resolver(DB)
+DB = ConnectionResolver().set_connection_details(DATABASES)
 
 
 logger = logging.getLogger('orator.connection.queries')

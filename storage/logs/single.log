@@ -3,3 +3,11 @@
 2020-03-28 06:54:07 - ERROR - OperationalError in /home/kaito/workspase/Python3/masonite_template/app/http/controllers/auth/RegisterController.py on line 55
 2020-11-03 13:13:32 - ERROR - QueryException in /home/kaito/workspase/python/masonite_template/app/http/controllers/auth/RegisterController.py on line 55
 2020-11-03 13:14:14 - ERROR - QueryException in /home/kaito/workspase/python/masonite_template/app/http/controllers/auth/RegisterController.py on line 55
+2021-03-27 12:49:09 - ERROR - TemplateSyntaxError in /home/kaito/workspase/masonite_template/resources/templates/auth/base.html on line 27
+2021-03-27 12:50:03 - ERROR - TemplateSyntaxError in /home/kaito/workspase/masonite_template/resources/templates/auth/base.html on line 27
+2021-03-27 13:09:48 - ERROR - TemplateSyntaxError in /home/kaito/workspase/masonite_template/resources/templates/auth/base.html on line 27
+2021-03-27 13:09:53 - ERROR - TemplateSyntaxError in /home/kaito/workspase/masonite_template/resources/templates/auth/base.html on line 27
+2021-03-27 13:24:37 - ERROR - TemplateSyntaxError in /home/kaito/workspase/masonite_template/resources/templates/auth/base.html on line 68
+2021-04-01 06:08:54 - ERROR - Error in /usr/lib/python3.6/base64.py on line 87
+2021-04-01 06:09:49 - ERROR - DriverNotFound in 0 on line 0
+2021-04-01 06:10:30 - ERROR - QueryException in 0 on line 0
